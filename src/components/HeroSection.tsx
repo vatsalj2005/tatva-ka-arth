@@ -3,13 +3,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Search } from 'lucide-react';
 import { useApp } from '@/contexts/AppContext';
 import { transliterateText } from '@/lib/transliterate';
-import hero1 from '@/assets/hero-1.jpg';
-import hero2 from '@/assets/hero-2.jpg';
-import hero3 from '@/assets/hero-3.jpg';
 import { useNavigate } from 'react-router-dom';
 import { searchContent } from '@/data/content-loader';
 
-const heroImages = [hero1, hero2, hero3];
+// Dynamically import all hero images from the assets folder
+const heroImages = Object.values(
+  (import.meta as any).glob('../assets/hero-*.{jpg,jpeg,png,webp,svg}', { eager: true, import: 'default' })
+) as string[];
 
 const HeroSection = () => {
   const { t, language } = useApp();

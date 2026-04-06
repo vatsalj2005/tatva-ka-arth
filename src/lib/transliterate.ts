@@ -36,6 +36,12 @@ const consonants: Record<string, string> = {
 // Halant (virama) - removes inherent 'a'
 const halant = '्';
 
+// Hindi numbers
+const numbers: Record<string, string> = {
+  '०': '0', '१': '1', '२': '2', '३': '3', '४': '4',
+  '५': '5', '६': '6', '७': '7', '८': '8', '९': '9'
+};
+
 /**
  * Transliterate Hindi/Devanagari text to Roman script (simple ASCII)
  */
@@ -47,27 +53,42 @@ export function transliterateToRoman(text: string): string {
   
   while (i < text.length) {
     const char = text[i];
-    const nextChar = text[i + 1];
-    const twoChar = char + nextChar;
     
-    // Check for two-character combinations first
-    if (consonants[twoChar]) {
-      result += consonants[twoChar];
-      i += 2;
+    // Check if it's a number
+    if (numbers[char]) {
+      result += numbers[char];
+      i++;
       continue;
     }
-    
+
     // Check if it's a vowel
     if (vowels[char]) {
       result += vowels[char];
       i++;
       continue;
     }
+
+    const twoChar = char + (text[i + 1] || '');
+    const threeChar = char + (text[i + 1] || '') + (text[i + 2] || '');
     
+    let matchLen = 0;
+    let consonantStr = '';
+
+    if (consonants[threeChar]) {
+      consonantStr = consonants[threeChar];
+      matchLen = 3;
+    } else if (consonants[twoChar]) {
+      consonantStr = consonants[twoChar];
+      matchLen = 2;
+    } else if (consonants[char]) {
+      consonantStr = consonants[char];
+      matchLen = 1;
+    }
+
     // Check if it's a consonant
-    if (consonants[char]) {
-      let consonant = consonants[char];
-      i++;
+    if (matchLen > 0) {
+      let consonant = consonantStr;
+      i += matchLen;
       
       // Check for halant (virama)
       if (text[i] === halant) {
@@ -108,6 +129,11 @@ export function transliterateToRoman(text: string): string {
     // If it's punctuation, number, or other character, keep as is
     result += char;
     i++;
+  }
+  
+  // Schwa deletion rule for words ending in "न" or "ल"
+  if ((text.endsWith('न') || text.endsWith('ल')) && result.endsWith('a')) {
+    result = result.slice(0, -1);
   }
   
   return result;
