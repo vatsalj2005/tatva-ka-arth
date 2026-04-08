@@ -11,6 +11,7 @@ import BhajanLanding from "./pages/BhajanLanding";
 import SubdivisionPage from "./pages/SubdivisionPage";
 import BhajanPage from "./pages/BhajanPage";
 import ComingSoon from "./pages/ComingSoon";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ export default function App() {
           <Sonner />
 
           <BrowserRouter basename="/tatva-ka-arth">
+            <ScrollToTop />
             <Routes>
               <Route path="/" element={<Index />} />
 
