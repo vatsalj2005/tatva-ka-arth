@@ -1,18 +1,21 @@
-# तत्वो का अर्थ — Tatva Ka Arth
+<div align="center">
+
+<img src="src/assets/hero-1.jpg" alt="Tatva Ka Arth Banner" width="100%" />
+
+# 🙏 तत्वो का अर्थ — Tatva Ka Arth
 
 A digital library for Jain scriptures, bhajans, poojas, and religious texts.
 
-## 🌐 Live Website
+[![Live Website](https://img.shields.io/badge/🌐_Live-Visit_Website-D4A843?style=for-the-badge)](https://vatsalj2005.github.io/tatva-ka-arth/)
 
-`https://vatsalj2005.github.io/tatva-ka-arth/`
+</div>
 
 ## ✨ Features
 
 - Browse Jain bhajans by category (Dev, Shastra, Guru, Bhakti)
 - Devanagari text with automatic Roman transliteration
 - PDF download with both Hindi and romanized versions
-- Responsive design
-- Dark mode support
+- Responsive design with 4 themes (Dark, Soft Dark, Light, Sepia)
 - Multi-language support (Hindi/English)
 - Search functionality with Roman script support
 
@@ -50,7 +53,7 @@ npm run preview
 
 - React + TypeScript
 - Vite
-- Tailwind CSS + shadcn/ui
+- Tailwind CSS
 - React Router
 - Framer Motion
 - jsPDF (for PDF generation)
@@ -59,7 +62,8 @@ npm run preview
 
 ```
 src/
-├── components/     # UI components
+├── assets/         # Hero images
+├── components/     # UI components (Header, Footer, Settings, etc.)
 ├── pages/          # Page components
 ├── content/        # Bhajan texts (Hindi only)
 │   └── bhajans/
@@ -67,8 +71,8 @@ src/
 │       ├── shastra/
 │       ├── guru/
 │       └── bhakti/
-├── contexts/       # React contexts
-├── data/           # Data loaders
+├── contexts/       # React contexts (AppContext)
+├── data/           # Content loader
 ├── lib/            # Utilities (transliteration, PDF generation)
 └── i18n/           # Translations
 ```
@@ -121,19 +125,6 @@ Downloaded PDFs contain:
 - Page 1: Hindi bhajan with Devanagari font
 - Page 2: Automatic romanized transliteration
 
-## 🎨 Themes
-
-- Dark (default)
-- Soft Dark
-- Light
-- Sepia
-
-## 📱 Responsive
-
-Fully responsive design works on:
-- Desktop
-- Tablet
-- Mobile
 
 ## 🙏 Credits
 

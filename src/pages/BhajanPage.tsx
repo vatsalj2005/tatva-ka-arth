@@ -13,7 +13,6 @@ const BhajanPage = () => {
   const { t, language, fontSize, lineSpacing, useSerif, theme } = useApp();
   const [showRoman, setShowRoman] = useState(false);
   const [copied, setCopied] = useState(false);
-  const [pdfModalOpen, setPdfModalOpen] = useState(false);
 
   const bhajan = getBhajanById(subdivisionId || '', bhajanId || '');
   if (!bhajan) return null;

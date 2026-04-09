@@ -25,14 +25,16 @@ const SettingsPanel = ({ open, onClose }: SettingsPanelProps) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-surface-overlay/60 backdrop-blur-sm"
+            transition={{ duration: 0.25, ease: 'easeOut' }}
+            className="fixed inset-0 z-50 bg-surface-overlay/70"
             onClick={onClose}
           />
           <motion.div
             initial={{ x: '100%' }}
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
-            transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+            transition={{ type: 'tween', duration: 0.3, ease: [0.32, 0.72, 0, 1] }}
+            style={{ willChange: 'transform' }}
             className="fixed right-0 top-0 bottom-0 z-50 w-80 bg-card border-l border-border shadow-2xl overflow-y-auto"
           >
             <div className="p-6">
