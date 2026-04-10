@@ -2,9 +2,8 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search } from 'lucide-react';
 import { useApp } from '@/contexts/AppContext';
-import { transliterateText } from '@/lib/transliterate';
 import { useNavigate } from 'react-router-dom';
-import { searchContent } from '@/data/content-loader';
+import { smartSearch, SearchResult } from '@/lib/smart-search';
 
 // Dynamically import all hero images from the assets folder
 const heroImages = Object.values(
@@ -12,11 +11,12 @@ const heroImages = Object.values(
 ) as string[];
 
 const HeroSection = () => {
-  const { t, language } = useApp();
+  const { t } = useApp();
   const navigate = useNavigate();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [searchQuery, setSearchQuery] = useState('');
-  const [suggestions, setSuggestions] = useState<{ id: string; subdivision: string; slug: string; title: string }[]>([]);
+  const [suggestions, setSuggestions] = useState<SearchResult[]>([]);
+  const [isFocused, setIsFocused] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -27,17 +27,15 @@ const HeroSection = () => {
 
   useEffect(() => {
     if (searchQuery.length > 1) {
-      const results = searchContent(searchQuery).slice(0, 5);
-      setSuggestions(results.map(r => ({
-        id: r.id,
-        subdivision: r.subdivision,
-        slug: r.slug,
-        title: language === 'hi' ? r.title : transliterateText(r.title),
-      })));
+      // Home page searches everything (no subdivision filter)
+      const results = smartSearch(searchQuery, { limit: 10 });
+      setSuggestions(results);
     } else {
       setSuggestions([]);
     }
-  }, [searchQuery, language]);
+  }, [searchQuery]);
+
+  const showDropdown = isFocused && suggestions.length > 0;
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
@@ -83,43 +81,50 @@ const HeroSection = () => {
           {t('heroSubtitle')}
         </motion.p>
 
-        {/* Search Bar */}
+        {/* Search Bar — Google-style */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
           className="relative max-w-xl mx-auto"
         >
-          <div className="relative">
+          <div className={`relative ${showDropdown ? 'rounded-t-2xl' : 'rounded-2xl'}`}>
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
             <input
               type="text"
               placeholder={t('searchPlaceholder')}
               value={searchQuery}
               onChange={e => setSearchQuery(e.target.value)}
-              className="w-full pl-12 pr-4 py-4 rounded-2xl bg-card/90 backdrop-blur-md border border-border/50 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold/50 text-base"
+              onFocus={() => setIsFocused(true)}
+              onBlur={() => setTimeout(() => setIsFocused(false), 200)}
+              className={`w-full pl-12 pr-4 py-4 bg-card/90 backdrop-blur-md border border-border/50 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold/50 text-base ${
+                showDropdown ? 'rounded-t-2xl border-b-0' : 'rounded-2xl'
+              }`}
             />
           </div>
 
           <AnimatePresence>
-            {suggestions.length > 0 && (
+            {showDropdown && (
               <motion.div
-                initial={{ opacity: 0, y: -5 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -5 }}
-                className="absolute top-full left-0 right-0 mt-2 bg-card border border-border rounded-xl shadow-2xl overflow-hidden z-20"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="absolute left-0 right-0 z-20 bg-card/95 backdrop-blur-md border border-border/50 border-t-0 rounded-b-2xl shadow-2xl overflow-hidden"
               >
+                <div className="border-t border-border/30" />
                 {suggestions.map(s => (
                   <button
                     key={s.id}
-                    onClick={() => {
-                      navigate(`/bhajan/${s.subdivision}/${s.slug}`);
+                    onMouseDown={(e) => {
+                      e.preventDefault();
+                      navigate(`/bhajan/${s.bhajan.subdivision}/${s.bhajan.slug}`);
                       setSearchQuery('');
                       setSuggestions([]);
                     }}
-                    className="w-full text-left px-4 py-3 hover:bg-secondary transition-colors text-foreground/90 text-sm border-b border-border/30 last:border-0"
+                    className="w-full text-left px-4 py-2.5 hover:bg-secondary/80 transition-colors text-sm flex items-center gap-3"
                   >
-                    🎵 {s.title}
+                    <Search className="w-3.5 h-3.5 text-muted-foreground/40 flex-shrink-0" />
+                    <span className="text-foreground/90 truncate devanagari-safe">{s.title}</span>
                   </button>
                 ))}
               </motion.div>

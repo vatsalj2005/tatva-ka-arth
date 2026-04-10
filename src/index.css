@@ -158,12 +158,13 @@
 
   /* Fix Hindi/Devanagari matra clipping */
   .devanagari-safe {
-    line-height: 1.8;
+    line-height: 1.6;
     overflow: visible;
-    padding-top: 0.2em;
-    padding-bottom: 0.15em;
-    text-rendering: optimizeLegibility;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    text-rendering: auto;
     -webkit-font-smoothing: antialiased;
+    display: block;
   }
 
 }
@@ -202,13 +203,23 @@
   .text-gradient-gold {
     background: linear-gradient(
       135deg,
-      hsl(var(--gold-dark)),
-      hsl(var(--gold)),
-      hsl(var(--gold-light))
+      hsl(var(--gold-dark)) 0%,
+      hsl(var(--gold)) 50%,
+      hsl(var(--gold-light)) 100%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    color: hsl(var(--gold)); /* Fallback */
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  /* Ensure text is visible when selected/highlighted */
+  ::selection {
+    background-color: hsl(var(--primary) / 0.3);
+    color: hsl(var(--foreground));
+    -webkit-text-fill-color: hsl(var(--foreground));
   }
 
   .glow-gold {
@@ -220,6 +231,38 @@
   .scrollbar-thin {
     scrollbar-width: thin;
     scrollbar-color: hsl(var(--gold) / 0.3) transparent;
+  }
+
+  /* ============================= */
+  /* Multi-Column Bhajan Grid      */
+  /* ============================= */
+
+  .bhajan-columns-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  /* ~640px+ : 2 columns when there's enough room */
+  @media (min-width: 700px) {
+    .bhajan-columns-grid {
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+  }
+
+  /* Landscape phones — force evaluation of space */
+  @media (min-width: 640px) and (orientation: landscape) {
+    .bhajan-columns-grid {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+  }
+
+  /* Large screens — comfortable 3+ columns */
+  @media (min-width: 1200px) {
+    .bhajan-columns-grid {
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    }
   }
 
 }

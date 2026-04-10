@@ -2,7 +2,6 @@
  * Filesystem-based content loader using Vite's import.meta.glob
  * Automatically discovers bhajans from /src/content/ at build time.
  */
-import { transliterateText } from '@/lib/transliterate';
 
 export interface BhajanData {
   id: string;
@@ -157,21 +156,4 @@ export const getRelatedBhajans = (bhajan: BhajanData, limit = 4): BhajanData[] =
     .filter(s => s.score > 0)
     .sort((a, b) => b.score - a.score);
   return scored.slice(0, limit).map(s => s.bhajan);
-};
-
-export const searchContent = (query: string) => {
-  const q = query.toLowerCase();
-  
-  return bhajans.filter(b => {
-    // Generate romanized version for search
-    const romanizedLyrics = transliterateText(b.lyrics).toLowerCase();
-    const romanizedTitle = transliterateText(b.title).toLowerCase();
-    
-    return b.title.toLowerCase().includes(q) ||
-      romanizedTitle.includes(q) ||
-      b.lyrics.toLowerCase().includes(q) ||
-      romanizedLyrics.includes(q) ||
-      b.tags.some(t => t.toLowerCase().includes(q)) ||
-      (b.singer && b.singer.toLowerCase().includes(q));
-  });
 };
