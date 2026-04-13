@@ -44,16 +44,22 @@ const hindiStopwords = new Set([
  * Example: महावीर_स्वामी_की_जय -> महावीर स्वामी की जय
  */
 function generateTitleFromFilename(filename: string): string {
+  // Replace double dashes with colon and space
+  let title = filename.replace(/--/g, ': ');
+  // Replace remaining hyphens and underscores with spaces
+  title = title.replace(/[-_]/g, ' ');
+  // Clean up extra spaces
+  title = title.replace(/\s+/g, ' ').trim();
+
   // Check if filename contains Devanagari characters
-  const hasHindi = /[\u0900-\u097F]/.test(filename);
+  const hasHindi = /[\u0900-\u097F]/.test(title);
   
   if (hasHindi) {
-    // Hindi filename - replace hyphens and underscores with spaces
-    return filename.replace(/[-_]/g, ' ');
+    return title;
   } else {
     // English filename - convert to title case
-    return filename
-      .split(/[-_]/)
+    return title
+      .split(' ')
       .map(word => word.charAt(0).toUpperCase() + word.slice(1))
       .join(' ');
   }

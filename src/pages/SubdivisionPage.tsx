@@ -3,13 +3,11 @@ import { Link, useParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useApp } from '@/contexts/AppContext';
 import { subdivisions, getBhajansBySubdivision } from '@/data/content-loader';
-import { smartSearch, SearchResult } from '@/lib/smart-search';
+import { smartSearch } from '@/lib/smart-search';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ArrowLeft, Music, Search, X } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-
-const COLUMN_LIMIT = 30;
 
 const SubdivisionPage = () => {
   const { subdivisionId } = useParams<{ subdivisionId: string }>();
@@ -26,15 +24,6 @@ const SubdivisionPage = () => {
     if (!searchQuery.trim()) return null;
     return smartSearch(searchQuery, { subdivisionId, limit: 10 });
   }, [searchQuery, subdivisionId]);
-
-  // Split full list into columns of COLUMN_LIMIT
-  const columns = useMemo(() => {
-    const cols: typeof bhajanList[] = [];
-    for (let i = 0; i < bhajanList.length; i += COLUMN_LIMIT) {
-      cols.push(bhajanList.slice(i, i + COLUMN_LIMIT));
-    }
-    return cols.length > 0 ? cols : [[]];
-  }, [bhajanList]);
 
   const showDropdown = isFocused && searchResults && searchResults.length > 0;
 
@@ -147,36 +136,30 @@ const SubdivisionPage = () => {
 
           {/* Multi-column Bhajan List */}
           <div className="bhajan-columns-grid">
-            {columns.map((col, colIdx) => (
-              <div key={colIdx} className="space-y-3 min-w-0">
-                {col.map((bhajan, i) => {
-                  const globalIdx = colIdx * COLUMN_LIMIT + i;
-                  return (
-                    <motion.div
-                      key={bhajan.id}
-                      initial={{ opacity: 0, x: -10 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: Math.min(globalIdx * 0.02, 0.5) }}
-                    >
-                      <Link
-                        to={`/bhajan/${bhajan.subdivision}/${bhajan.slug}`}
-                        className="flex items-center gap-4 p-4 rounded-xl border border-border/50 bg-card hover:border-gold/30 hover:bg-secondary transition-all group"
-                      >
-                        <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center flex-shrink-0">
-                          <Music className="w-5 h-5 text-gold" />
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <h3 className="font-medium text-foreground group-hover:text-gold transition-colors truncate devanagari-safe">
-                            {bhajan.title}
-                          </h3>
-                          {bhajan.singer && (
-                            <p className="text-xs text-gold/70 mt-0.5">🎤 {bhajan.singer}</p>
-                          )}
-                        </div>
-                      </Link>
-                    </motion.div>
-                  );
-                })}
+            {bhajanList.map((bhajan, i) => (
+              <div key={bhajan.id} className="break-inside-avoid mb-3">
+                <motion.div
+                  initial={{ opacity: 0, x: -10 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: Math.min(i * 0.02, 0.5) }}
+                >
+                  <Link
+                    to={`/bhajan/${bhajan.subdivision}/${bhajan.slug}`}
+                    className="flex items-center gap-4 p-4 rounded-xl border border-border/50 bg-card hover:border-gold/30 hover:bg-secondary transition-all group"
+                  >
+                    <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center flex-shrink-0">
+                      <Music className="w-5 h-5 text-gold" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-medium text-foreground group-hover:text-gold transition-colors truncate devanagari-safe">
+                        {bhajan.title}
+                      </h3>
+                      {bhajan.singer && (
+                        <p className="text-xs text-gold/70 mt-0.5">🎤 {bhajan.singer}</p>
+                      )}
+                    </div>
+                  </Link>
+                </motion.div>
               </div>
             ))}
           </div>

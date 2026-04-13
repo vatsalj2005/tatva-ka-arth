@@ -238,30 +238,14 @@
   /* ============================= */
 
   .bhajan-columns-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+    column-width: 300px;
+    column-gap: 1.5rem;
     width: 100%;
   }
 
-  /* ~640px+ : 2 columns when there's enough room */
-  @media (min-width: 700px) {
-    .bhajan-columns-grid {
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    }
-  }
-
-  /* Landscape phones — force evaluation of space */
-  @media (min-width: 640px) and (orientation: landscape) {
-    .bhajan-columns-grid {
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
-  }
-
-  /* Large screens — comfortable 3+ columns */
   @media (min-width: 1200px) {
     .bhajan-columns-grid {
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      column-width: 340px;
     }
   }
 

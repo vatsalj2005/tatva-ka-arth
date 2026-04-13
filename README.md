@@ -15,9 +15,9 @@
 ## ✨ Features
 
 ### 📖 Extensive Bhajan Library
-- **110+ bhajans** across specialized categories: Dev, Shastra, Guru & Bhakti.
+- **114+ bhajans** across specialized categories: Dev, Shastra, Guru & Bhakti.
 - **Intelligent Rendering**: Automatic Devanagari to Roman (Latin) transliteration for every bhajan.
-- **Adaptive Layout**: Responsive multi-column grid (30 items per column) that adjusts based on screen width and orientation (portrait/landscape).
+- **Adaptive Layout**: Responsive multi-column layout that naturally balances and equally divides list items across columns dynamically based on screen width and orientation.
 - **Professional Exports**: Generate and download PDFs containing both original Hindi and romanized versions.
 
 ### 🔍 Next-Gen Search Engine
