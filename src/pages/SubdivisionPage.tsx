@@ -137,10 +137,10 @@ const SubdivisionPage = () => {
           {/* Multi-column Bhajan List */}
           <div className="bhajan-columns-grid">
             {bhajanList.map((bhajan, i) => (
-              <div key={bhajan.id} className="break-inside-avoid mb-3">
                 <motion.div
-                  initial={{ opacity: 0, x: -10 }}
-                  animate={{ opacity: 1, x: 0 }}
+                  key={bhajan.id}
+                  initial={{ opacity: 0, y: 5 }}
+                  animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: Math.min(i * 0.02, 0.5) }}
                 >
                   <Link
@@ -160,7 +160,6 @@ const SubdivisionPage = () => {
                     </div>
                   </Link>
                 </motion.div>
-              </div>
             ))}
           </div>
 

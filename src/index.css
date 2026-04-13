@@ -238,14 +238,15 @@
   /* ============================= */
 
   .bhajan-columns-grid {
-    column-width: 300px;
-    column-gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.25rem;
     width: 100%;
   }
 
   @media (min-width: 1200px) {
     .bhajan-columns-grid {
-      column-width: 340px;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     }
   }
 
