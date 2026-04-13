@@ -1,4 +1,4 @@
-import { useState, useMemo, useRef } from 'react';
+import { useState, useMemo, useRef, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useApp } from '@/contexts/AppContext';
@@ -24,6 +24,43 @@ const SubdivisionPage = () => {
     if (!searchQuery.trim()) return null;
     return smartSearch(searchQuery, { subdivisionId, limit: 10 });
   }, [searchQuery, subdivisionId]);
+
+  // Determine dynamic columns based on screen width
+  const [columnsCount, setColumnsCount] = useState(1);
+
+  useEffect(() => {
+    const updateColumns = () => {
+      const width = window.innerWidth;
+      if (width >= 1200) setColumnsCount(4);
+      else if (width >= 1024) setColumnsCount(3);
+      else if (width >= 640) setColumnsCount(2);
+      else setColumnsCount(1);
+    };
+    
+    updateColumns();
+    window.addEventListener('resize', updateColumns);
+    return () => window.removeEventListener('resize', updateColumns);
+  }, []);
+
+  // Split full list vertically into strict equal math columns based on screen
+  const columns = useMemo(() => {
+    if (!bhajanList || bhajanList.length === 0) return [];
+    
+    const cols = Array.from({ length: columnsCount }, () => [] as typeof bhajanList);
+    const itemsPerColumn = Math.ceil(bhajanList.length / columnsCount);
+    
+    for (let i = 0; i < bhajanList.length; i++) {
+      const colIndex = Math.floor(i / itemsPerColumn);
+      // Failsafe push to last column if Math bounds overflow
+      if (colIndex < columnsCount) {
+        cols[colIndex].push(bhajanList[i]);
+      } else {
+        cols[columnsCount - 1].push(bhajanList[i]);
+      }
+    }
+    
+    return cols;
+  }, [bhajanList, columnsCount]);
 
   const showDropdown = isFocused && searchResults && searchResults.length > 0;
 
@@ -135,31 +172,38 @@ const SubdivisionPage = () => {
           </motion.div>
 
           {/* Multi-column Bhajan List */}
-          <div className="bhajan-columns-grid">
-            {bhajanList.map((bhajan, i) => (
-                <motion.div
-                  key={bhajan.id}
-                  initial={{ opacity: 0, y: 5 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: Math.min(i * 0.02, 0.5) }}
-                >
-                  <Link
-                    to={`/bhajan/${bhajan.subdivision}/${bhajan.slug}`}
-                    className="flex items-center gap-4 p-4 rounded-xl border border-border/50 bg-card hover:border-gold/30 hover:bg-secondary transition-all group"
-                  >
-                    <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center flex-shrink-0">
-                      <Music className="w-5 h-5 text-gold" />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <h3 className="font-medium text-foreground group-hover:text-gold transition-colors truncate devanagari-safe">
-                        {bhajan.title}
-                      </h3>
-                      {bhajan.singer && (
-                        <p className="text-xs text-gold/70 mt-0.5">🎤 {bhajan.singer}</p>
-                      )}
-                    </div>
-                  </Link>
-                </motion.div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+            {columns.map((col, colIdx) => (
+              <div key={colIdx} className="flex flex-col gap-3 min-w-0">
+                {col.map((bhajan, itemIdx) => {
+                  const globalDelay = (colIdx * col.length + itemIdx) * 0.02;
+                  return (
+                    <motion.div
+                      key={bhajan.id}
+                      initial={{ opacity: 0, y: 5 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: Math.min(globalDelay, 0.5) }}
+                    >
+                      <Link
+                        to={`/bhajan/${bhajan.subdivision}/${bhajan.slug}`}
+                        className="flex items-center gap-4 p-4 rounded-xl border border-border/50 bg-card hover:border-gold/30 hover:bg-secondary transition-all group"
+                      >
+                        <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center flex-shrink-0">
+                          <Music className="w-5 h-5 text-gold" />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <h3 className="font-medium text-foreground group-hover:text-gold transition-colors truncate devanagari-safe">
+                            {bhajan.title}
+                          </h3>
+                          {bhajan.singer && (
+                            <p className="text-xs text-gold/70 mt-0.5">🎤 {bhajan.singer}</p>
+                          )}
+                        </div>
+                      </Link>
+                    </motion.div>
+                  );
+                })}
+              </div>
             ))}
           </div>
 

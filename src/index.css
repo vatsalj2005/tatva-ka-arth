@@ -233,21 +233,5 @@
     scrollbar-color: hsl(var(--gold) / 0.3) transparent;
   }
 
-  /* ============================= */
-  /* Multi-Column Bhajan Grid      */
-  /* ============================= */
-
-  .bhajan-columns-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.25rem;
-    width: 100%;
-  }
-
-  @media (min-width: 1200px) {
-    .bhajan-columns-grid {
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    }
-  }
 
 }
