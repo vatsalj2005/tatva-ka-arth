@@ -1,42 +1,1180 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <!-- Homepage -->
   <url>
     <loc>https://vatsalj2005.github.io/tatva-ka-arth/</loc>
-    <lastmod>2026-04-06</lastmod> 
+    <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Content Pages -->
+
+  <!-- Bhajan Landing -->
   <url>
     <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan</loc>
-    <lastmod>2026-04-06</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Dev Bhajan Subdivision -->
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Coming Soon Pages -->
   <url>
     <loc>https://vatsalj2005.github.io/tatva-ka-arth/pooja</loc>
-    <lastmod>2026-04-06</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://vatsalj2005.github.io/tatva-ka-arth/granth</loc>
-    <lastmod>2026-04-06</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://vatsalj2005.github.io/tatva-ka-arth/teeka</loc>
-    <lastmod>2026-04-06</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://vatsalj2005.github.io/tatva-ka-arth/paath</loc>
-    <lastmod>2026-04-06</lastmod>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/अंतर-में-आनंद-आयो</loc>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/अपना-ही-रंग-मोहे</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/अभिनंदन--जगदानंदन</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/अरिहंत-देव-स्वामी-शरण</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/अशरण-जग-में-चंद्रनाथ-जी</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/अशरीरी-सिद्ध-भगवान</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/आओ-जिनमंदिर-में-आओ</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/आओ-दिखायें-हम-शुभ-नगरी</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/आगया-शरण-तिहारी-आगया</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/आज-खुशी-तेरे-दर्शन-की</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/आज-हम-जिनराज</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/आदिनाथ--गाएँ-जी-गाएँ</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/आदिनाथ--जपलो-रे-आदीश्वर</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/आदिनाथ--देखो-जी-आदिश्वर</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/आदिनाथ--म्हारा-आदीश्वर</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/आया-तेरे-दरबार-में</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/आये-आये-रे-जिनंदा</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/आयो-आयो-रे-हमारो</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/एक-तुम्हीं-आधार-हो</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/ओ-जगत-के-शांति-दाता</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/कभी-वीर-बनके</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/करता-रहूँ-गुणगान</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/करता-हूं-तुम्हारा-सुमिरन</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/कर-लो-जिनवर-का-गुणगान</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/करुणा-सागर-भगवान</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/कुंथुनाथ--कुंथुन-के-प्रतिपाल</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/केसरिया-केसरिया</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/कैसा-अद्भुत-शान्त-स्वरूप</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/कैसी-सुन्दर-जिन-प्रतिमा</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/कोई-इत-आओ-जी</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/गंगा-कल-कल-स्वर-में</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/गाएँ-जी-गाएँ-आदिनाथ</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/गा-रे-भैया</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/घडी-घडी-पल-पल</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/घड़ी-जिनराज-दर्शन-की</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/चंद्रनाथ--चंद्रानन</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/चंद्रनाथ--निरखत-जिन-चंद्रवदन</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/चरणों-में-आया-हूं</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/चवलेश्वर-पारसनाथ</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/चाँदनी-फीकी-पड़-जाए</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/चाह-मुझे-है-दर्शन-की</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/जपि-माला-जिनवर</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/जब-कोई-नहीं-आता</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/जय-जय-जय-जिनवर-जी-मेरी</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/जयवंतो-जिनबिम्ब</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/जिनजी-के-दरश-मिले</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/जिनदेव-से-कीनी-जाने-प्रीत</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/जिन-ध्याना-गुण-गाना</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/जिन-पूजन-कर-लो-ये-ही</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/जिन-मंदिर-में-आके-हम</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/जिनराज-तेरी-महिमा</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/जिनवर-आनन-भान</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/जिनवर-की-भक्ति-करेगा</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/जिनवर-की-वाणी-में-म्‍हारो</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/जिनवर-की-होवे-जय-जयकार</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/जिनवर-तू-है-चंदा-तो</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/जिनवर-दरबार-तुम्हारा</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/जो-पूजा-प्रभु-की-रचाता</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/झीनी-झीनी-उडे-रे</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/तिहारे-ध्यान-की-मूरत</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/तुम-जैसा-मैं-भी</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/तुमसे-लागी-लगन</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/तुम्हारे-दर्श-बिन-स्वामी</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/तुम्ही-हो-ज्ञाता</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/तू-ज्ञान-का-सागर-है</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/तेरी-छत्रछाया-भगवन्-मेरे</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/तेरी-परम-दिगंबर-मुद्रा-को</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/तेरी-शांत-छवि</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/तेरी-शीतल-शीतल-मूरत</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/तेरी-सुंदर-मूरत</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/तेरे-दर्शन-को-मन</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/तेरे-दर्शन-से-मेरा</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/दया-करो-भगवन्-मुझपर</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/दयालु-प्रभु-से-दया</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/दरबार-तुम्हारा-मनहर-है</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/दिन-रात-स्वामी-तेरे-गीत</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/धन्य-धन्य-आज-घडी</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/ध्यान-धर-ले-प्रभू-को</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/ना-जिन-द्वार-आये-ना</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/नाथ-तुम्हारी-पूजा</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/नाथ-तुम्हारे-दर्शन-से</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/नाम-तुम्हारा-तारणहारा</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/निरखी-निरखी-मनहर</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/निरखो-अंग-अंग-जिनवर</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/नेमि-जिनेश्वर</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/नेमिनाथ--नेमिप्रभू-की-श्यामवरन</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/नेमिनाथ--रोम-रोम-में-नेमि</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/नेमिनाथ--शौरीपुर-वाले</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/पंचपरम-परमेष्ठी</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/पद्मप्रभु--पद्मसद्म</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/पारसनाथ--चवलेश्वर-पारसनाथ</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/पारसनाथ--तुमसे-लागी-लगन</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/पारसनाथ--पारस-प्यारा-लागो</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/पारसनाथ--पारस-प्रभु-का</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/पारसनाथ--पार्श्व-प्रभुजी-पार</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/पारसनाथ--मंगल-थाल-सजाकर</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/पारसनाथ--मेरे-प्रभु-का-पारस</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/पारसनाथ--मैं-करूँ-वंदना</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/प्रभुजी-अब-ना-भटकेंगे</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/प्रभुजी-मन-मंदिर-में-आओ</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/प्रभु-दर्शन-कर-जीवन-की</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/प्रभु-हम-सब-का-एक</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/बाहुबली-भगवान</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/भगवान-मेरी-नैया-उस</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/भटके-हुए-राही-को</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/भावना-की-चूनरी</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/मंगल-अरिहंत-मंगल</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/मंगल-थाल-सजाकर</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/मन-ज्योत-जला-देना-प्रभु</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/मन-तड़फत-प्रभु-दरशन</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/मन-भाये-चित-हुलसाये</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/मनहर-तेरी-मूरतियाँ</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/मनहर-मूरत-जिनन्द-निहार</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/महाराजा-स्वामी</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/महावीर--आज-मैं-महावीर</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/महावीर--एक-बार-आओ-जी</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/महावीर--जय-बोलो-त्रिशला</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/महावीर--तुझे-प्रभु-वीर-कहते</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/महावीर--मस्तक-झुका-के</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/महावीर--वर्तमान-को-वर्धमान</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/महावीर--वर्धमान-ललना-से</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/महावीर--वीर-प्रभु-के-ये-बोल</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/महावीर-स्वामी</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/महावीर--हम-आये-तेरे-द्वार</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/महावीर--हरो-पीर-मेरी</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/महावीर--हे-वीर-तुम्हारे</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/मिलता-है-सच्चा-सुख</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/मूरत-है-बनी-प्रभु-की-प्यारी</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/मेरे-मन-मंदिर-में-आन</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/मेरे-सर-पर-रख-दो</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/मैं-करूँ-वंदना-तेरी</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/मैं-तेरे-ढिंग-आया-रे</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/मैं-ये-निर्ग्रंथ-प्रतिमा</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/रंग-दो-जी-रंग-जिनराज</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/रंगमा-रंगमा</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/रोम-रोम-पुलकित-हो-जाये</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/रोम-रोम-से-निकले</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/लिया-प्रभू-अवतार-जयजयकार</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/वन्दों-अद्भुत-चन्द्रवीर-जिन</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/वर्तमान-को-वर्धमान-की</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/वासुपूज्य--जय-जिन-वासुपूज्य</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/वीतरागी-देव</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/वीर-प्रभु-के-ये-बोल</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/शुद्धातम-की-बात-बता-दो</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/श्री-अरहंत-सदा-मंगलमय</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/श्री-अरिहंत-छवि-लखिके</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/श्री-जिनवर-पद-ध्यावें-जे</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/सच्चे-जिनवर-सच्चे-सारे</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/सांची-कहें-तोहरे-दर्शन-से</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/सीमंधर-स्वामी</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/सुरपति-ले-अपने-शीश</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/स्वर्ग-से-सुंदर-अनुपम</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/स्‍वागत-करते-आज-तुम्‍हारा</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/हम-यही-कामना-करते-हैं</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/हरो-पीर-मेरी</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/हे-जिन-तेरे-मैं-शरणै</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/हे-जिन-मेरी-ऐसी-बुधि</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/हे-ज्ञान-सिन्‍धु-भगवान</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/हे-प्रभो-चरणों-में</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/हे-वीर-तुम्हारे-द्वारे-पर</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalj2005.github.io/tatva-ka-arth/bhajan/dev/है-कितनी-मनहार-बहती</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
